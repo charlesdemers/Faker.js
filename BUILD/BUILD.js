@@ -60,7 +60,7 @@ code += 'var Helpers = faker.Helpers;\n';
 
 // if we are running in a CommonJS env, export everything out
 code +=["\nif (typeof define == 'function'){",
-"   define(function(){",
+"   define('faker', [], function(){",
 "		return faker;",
 "   });",
 "}",
